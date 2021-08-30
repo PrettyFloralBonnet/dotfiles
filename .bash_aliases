@@ -1,6 +1,10 @@
 # navigation
 
-alias open="start"
+case "$OSTYPE" in
+    msys*) alias open="start" ;;
+    linux*) alias open="xdg-open" ;;
+esac
+
 
 alias ...="../.."
 alias ....="../../.."
